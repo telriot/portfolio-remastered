@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 function ProjectCard({ project }) {
   const classes = useStyles();
-  const { name, description, tools, j2, webp, png, web, git } = project;
+  const { name, description, webp, png, web, git } = project;
   const handleNewTabClick = (address) => () => {
     window.open(address, "_blank");
   };
