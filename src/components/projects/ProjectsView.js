@@ -34,9 +34,9 @@ function ProjectsView() {
   const classes = useStyles();
 
   return (
-    <section id="projects" className={classes.projects}>
+    <section className={classes.projects}>
       <div className={classes.projectsInnerDiv}>
-        <Container className={classes.container}>
+        <Container id="projects" className={classes.container}>
           <Typography
             align="center"
             className={classes.title}

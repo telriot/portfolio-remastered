@@ -1,15 +1,15 @@
-import bookClubSmJ2 from "./book-club-sm.jp2";
-import kogetaroSmJ2 from "./mines-of-kogetaro-sm.jp2";
-import d3chartsSmJ2 from "./d3charts-sm.jp2";
-import chatSmJ2 from "./chat-sm.jp2";
-import bookClubSmWp from "./book-club-sm.webp";
-import kogetaroSmWp from "./mines-of-kogetaro-sm.webp";
-import d3chartsSmWp from "./d3charts-sm.webp";
-import chatSmWp from "./chat-sm.webp";
-import bookClubSmPng from "./book-club-sm.png";
-import kogetaroSmPng from "./mines-of-kogetaro-sm.png";
-import d3chartsSmPng from "./d3charts-sm.png";
-import chatSmPng from "./chat-sm.png";
+import bookClubSmJ2 from "./book-club-md.jp2";
+import kogetaroSmJ2 from "./mines-of-kogetaro-md.jp2";
+import d3chartsSmJ2 from "./d3charts-md.jp2";
+import cryptowallSmJ2 from "./cryptowall-md.jp2";
+import bookClubSmWp from "./book-club-md.webp";
+import kogetaroSmWp from "./mines-of-kogetaro-md.webp";
+import d3chartsSmWp from "./d3charts-md.webp";
+import cryptowallSmWp from "./cryptowall-md.webp";
+import bookClubSmPng from "./book-club-md.png";
+import kogetaroSmPng from "./mines-of-kogetaro-md.png";
+import d3chartsSmPng from "./d3charts-md.png";
+import cryptowallSmPng from "./cryptowall-md.png";
 
 export const images = {
   1: {
@@ -37,11 +37,11 @@ export const images = {
     smJ2: d3chartsSmJ2,
   },
   4: {
-    mdWp: chatMdWp,
-    smWp: chatSmWp,
-    mdPng: chatMdPng,
-    smPng: chatSmPng,
-    mdJ2: chatMdJ2,
-    smJ2: chatSmJ2,
+    mdWp: cryptowallMdWp,
+    smWp: cryptowallSmWp,
+    mdPng: cryptowallMdPng,
+    smPng: cryptowallSmPng,
+    mdJ2: cryptowallMdJ2,
+    smJ2: cryptowallSmJ2,
   },
 };

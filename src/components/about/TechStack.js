@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: theme.shadows[4],
     },
     [theme.breakpoints.down("xs")]: {
-      padding: ".75rem 0",
+      padding: ".5rem 0",
     },
   },
   contentDiv: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "contain",
     [theme.breakpoints.down("xs")]: {
       margin: 0,
-      height: "3rem",
+      height: "2rem",
       width: "5rem",
     },
   },
@@ -57,7 +57,7 @@ function TechStack() {
   const theme = useTheme();
   const isSM = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Grid className={classes.stackGrid} container spacing={!isSM ? 2 : 3}>
+    <Grid className={classes.stackGrid} container spacing={!isSM ? 1 : 3}>
       {fullStack.map((item, index) => (
         <Grid key={`tech-${index}`} item xs={6} sm={6} md={4} lg={3}>
           <Paper className={classes.item}>

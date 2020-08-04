@@ -1,15 +1,11 @@
-import bookClubSmJ2 from "./images/book-club-sm.jp2";
-import kogetaroSmJ2 from "./images/mines-of-kogetaro-sm.jp2";
-import d3chartsSmJ2 from "./images/d3charts-sm.jp2";
-import chatSmJ2 from "./images/chat-sm.jp2";
-import bookClubSmWp from "./images/book-club-sm.webp";
-import kogetaroSmWp from "./images/mines-of-kogetaro-sm.webp";
-import d3chartsSmWp from "./images/d3charts-sm.webp";
-import chatSmWp from "./images/chat-sm.webp";
-import bookClubSmPng from "./images/book-club-sm.png";
-import kogetaroSmPng from "./images/mines-of-kogetaro-sm.png";
-import d3chartsSmPng from "./images/d3charts-sm.png";
-import chatSmPng from "./images/chat-sm.png";
+import bookClubSmWp from "./images/book-club-md.webp";
+import kogetaroSmWp from "./images/mines-of-kogetaro-md.webp";
+import d3chartsSmWp from "./images/d3charts-md.webp";
+import cryptowallSmWp from "./images/cryptowall-md.webp";
+import bookClubSmPng from "./images/book-club-md.png";
+import kogetaroSmPng from "./images/mines-of-kogetaro-md.png";
+import d3chartsSmPng from "./images/d3charts-md.png";
+import cryptowallSmPng from "./images/cryptowall-md.png";
 export const social = {
   twitter: "https://twitter.com/BeniaminoTarta1",
   github: "https://www.github.com/telriot",
@@ -22,11 +18,10 @@ export const projects = [
     description:
       "A cryptocurrency visualization tool based on the CoinGecko API and WebSockets",
     tools: "React, NodeJs, MaterialUI, JavaScript, HTML",
-    web: "https://fcc-chat-app.herokuapp.com/",
+    web: "https://cryptowall.herokuapp.com/",
     git: "https://github.com/telriot/chat-app",
-    j2: chatSmJ2,
-    webp: chatSmWp,
-    png: chatSmPng,
+    webp: cryptowallSmWp,
+    png: cryptowallSmPng,
   },
   {
     name: "Book Club",
@@ -35,7 +30,6 @@ export const projects = [
     tools: "React, NodeJs. MongoDB, JavaScript, Sass, HTML",
     web: "https://bookclubfcc.herokuapp.com/",
     git: "https://github.com/telriot/book-club",
-    j2: bookClubSmJ2,
     webp: bookClubSmWp,
     png: bookClubSmPng,
   },
@@ -46,7 +40,6 @@ export const projects = [
     tools: "React, JavaScript, Sass, HTML",
     web: "https://obscure-falls-32133.herokuapp.com/",
     git: "https://github.com/telriot/dungeon-crawler",
-    j2: kogetaroSmJ2,
     webp: kogetaroSmWp,
     png: kogetaroSmPng,
   },
@@ -57,7 +50,6 @@ export const projects = [
     tools: "React, D3.js, JavaScript, Sass, HTML",
     web: "https://fcc-charts-1.herokuapp.com/",
     git: "https://github.com/telriot/fcc-charts",
-    j2: d3chartsSmJ2,
     webp: d3chartsSmWp,
     png: d3chartsSmPng,
   },

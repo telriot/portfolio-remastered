@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+
     width: "100%",
   },
   projectName: {
@@ -48,10 +49,9 @@ function ProjectCard({ project }) {
     <Grid item xs={12} sm={6}>
       <Card className={classes.card}>
         <CardActionArea onClick={handleNewTabClick(web)}>
-          <CardMedia className={classes.media} title="Contemplative Reptile">
+          <CardMedia className={classes.media} title={name}>
             <picture>
               <source srcSet={webp} type="image/webp" />
-              <source srcSet={j2} type="image/jp2" />
               <img
                 className={classes.image}
                 src={png}

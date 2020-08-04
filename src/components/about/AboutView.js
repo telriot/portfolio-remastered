@@ -4,6 +4,8 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import { about } from "../../config";
 import TechStack from "./TechStack";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 const useStyles = makeStyles((theme) => ({
   main: {
     background: theme.palette.grey[200],
@@ -41,11 +43,14 @@ const useStyles = makeStyles((theme) => ({
 
 function AboutView() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isSM = useMediaQuery(theme.breakpoints.up("sm"));
+
   let aboutText = about.split("\n").map((item, i) => (
     <Typography
       key={`text-${i}`}
       className={classes.text}
-      variant="body1"
+      variant={isSM ? "body1" : "body2"}
       component="p"
       align="center"
     >
@@ -54,9 +59,9 @@ function AboutView() {
   ));
 
   return (
-    <section id="about" className={classes.main}>
+    <section className={classes.main}>
       <div className={classes.innerDiv}>
-        <Container className={classes.container}>
+        <Container id="about" className={classes.container}>
           <Typography
             align="center"
             className={classes.title}
@@ -67,7 +72,11 @@ function AboutView() {
           </Typography>
           {aboutText}
           <br />
-          <Typography align="center" className={classes.text}>
+          <Typography
+            variant={isSM ? "body1" : "body2"}
+            align="center"
+            className={classes.text}
+          >
             Here are some of the tools I usually work with:
           </Typography>
           <TechStack />
