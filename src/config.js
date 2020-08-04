@@ -2,10 +2,10 @@ import bookClubSmWp from "./images/book-club-md.webp";
 import kogetaroSmWp from "./images/mines-of-kogetaro-md.webp";
 import d3chartsSmWp from "./images/d3charts-md.webp";
 import cryptowallSmWp from "./images/cryptowall-md.webp";
-import bookClubSmPng from "./images/book-club-md.png";
-import kogetaroSmPng from "./images/mines-of-kogetaro-md.png";
-import d3chartsSmPng from "./images/d3charts-md.png";
-import cryptowallSmPng from "./images/cryptowall-md.png";
+import bookClubSmjpg from "./images/book-club-md.jpg";
+import kogetaroSmjpg from "./images/mines-of-kogetaro-md.jpg";
+import d3chartsSmjpg from "./images/d3charts-md.jpg";
+import cryptowallSmjpg from "./images/cryptowall-md.jpg";
 export const social = {
   twitter: "https://twitter.com/BeniaminoTarta1",
   github: "https://www.github.com/telriot",
@@ -21,7 +21,7 @@ export const projects = [
     web: "https://cryptowall.herokuapp.com/",
     git: "https://github.com/telriot/chat-app",
     webp: cryptowallSmWp,
-    png: cryptowallSmPng,
+    jpg: cryptowallSmjpg,
   },
   {
     name: "Book Club",
@@ -31,7 +31,7 @@ export const projects = [
     web: "https://bookclubfcc.herokuapp.com/",
     git: "https://github.com/telriot/book-club",
     webp: bookClubSmWp,
-    png: bookClubSmPng,
+    jpg: bookClubSmjpg,
   },
   {
     name: "Kogetaro",
@@ -41,7 +41,7 @@ export const projects = [
     web: "https://obscure-falls-32133.herokuapp.com/",
     git: "https://github.com/telriot/dungeon-crawler",
     webp: kogetaroSmWp,
-    png: kogetaroSmPng,
+    jpg: kogetaroSmjpg,
   },
   {
     name: "Charts",
@@ -51,10 +51,10 @@ export const projects = [
     web: "https://fcc-charts-1.herokuapp.com/",
     git: "https://github.com/telriot/fcc-charts",
     webp: d3chartsSmWp,
-    png: d3chartsSmPng,
+    jpg: d3chartsSmjpg,
   },
 ];
-export const about = `Hi! I am Beniamino Tartarini, a former teacher converted to web development and located in sunny Miyazaki, Japan.
+export const about = `Hi! I am Ben, a former teacher converted to web development and located in sunny Miyazaki, Japan.
 
 I usually work on the MERN stack as a whole, mainly focusing on Hooks-based React development. When it comes to the front-end, I can comfortably switch between styling solutions and I love delving into all kinds of new technologies and ideas. 
 I like simple code and ideas that make sense, and strive to hold true to these two basic concepts.

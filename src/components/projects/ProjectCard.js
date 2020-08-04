@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 function ProjectCard({ project }) {
   const classes = useStyles();
-  const { name, description, webp, png, web, git } = project;
+  const { name, description, webp, jpg, web, git } = project;
   const handleNewTabClick = (address) => () => {
     window.open(address, "_blank");
   };
@@ -54,9 +54,9 @@ function ProjectCard({ project }) {
               <source srcSet={webp} type="image/webp" />
               <img
                 className={classes.image}
-                src={png}
+                src={jpg}
                 alt={name}
-                type="image/png"
+                type="image/jpg"
               />
             </picture>
           </CardMedia>

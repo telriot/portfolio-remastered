@@ -17,7 +17,12 @@ const useStyles = makeStyles((theme) => ({
     transition: "opacity ",
     transitionDuration: theme.transitions.duration.short,
   },
-  button: { transform: "translate(.5rem, .5rem)" },
+  button: {
+    transform: "translate(.5rem, .5rem)",
+    [theme.breakpoints.down("xs")]: {
+      transform: "translate(.25rem, .25rem)",
+    },
+  },
   menuIcon: {
     color: theme.palette.text.primary,
     fontSize: "2rem",

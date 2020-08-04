@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: theme.palette.text.primary,
-    marginBottom: "3rem",
+    marginBottom: theme.spacing(6),
   },
   text: {
     color: theme.palette.text.primary,
