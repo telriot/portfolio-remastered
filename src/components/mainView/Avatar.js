@@ -1,5 +1,6 @@
 import React from "react";
 import myPic from "../../assets/avatar500.jpg";
+import myPicWP from "../../assets/avatar500.webp";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +17,15 @@ function Avatar() {
   const classes = useStyles();
   return (
     <div>
-      <img className={classes.avatar} src={myPic} alt="Beniamino Tartarini" />
+      <picture>
+        <source srcSet={myPicWP} type="image/webp" />
+        <img
+          className={classes.avatar}
+          src={myPic}
+          alt="Beniamino Tartarini"
+          type="image/png"
+        />
+      </picture>
     </div>
   );
 }
