@@ -9,7 +9,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 import Resume from "../../assets/Resume.pdf";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   menuDiv: {
