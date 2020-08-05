@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -35,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
   projectDescription: {
     color: theme.palette.grey[800],
   },
+  divider: { margin: theme.spacing(1) },
   button: {
     color: theme.palette.text.primary,
   },
@@ -72,10 +74,17 @@ function ProjectCard({ project }) {
             <Typography
               className={classes.projectDescription}
               variant="body2"
-              color="textSecondary"
               component="p"
             >
               {description}
+            </Typography>
+            <Divider className={classes.divider} variant="middle" />
+            <Typography
+              className={classes.projectDescription}
+              variant="body2"
+              component="p"
+            >
+              Tech stack: {project.tools}
             </Typography>
           </CardContent>
         </CardActionArea>

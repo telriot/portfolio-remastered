@@ -1,12 +1,15 @@
 import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
+import Fade from "@material-ui/core/Fade";
+
 import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 import Resume from "../../assets/Resume.pdf";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   menuDiv: {
@@ -18,9 +21,11 @@ const useStyles = makeStyles((theme) => ({
     transitionDuration: theme.transitions.duration.short,
   },
   button: {
+    borderRadius: ".75rem",
+    padding: ".375rem",
     transform: "translate(.5rem, .5rem)",
     [theme.breakpoints.down("xs")]: {
-      transform: "translate(.25rem, .25rem)",
+      transform: "translate(.125rem, .125rem)",
     },
   },
   menuIcon: {
@@ -84,11 +89,19 @@ function HamburgerIcon() {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
+        TransitionComponent={Fade}
       >
         <MenuItem onClick={handleClose}>
-          <Link variant="button" className={classes.menuLink} href="#projects">
-            Projects
-          </Link>
+          <ScrollLink
+            className={classes.menuLink}
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
+            <Link variant="button" underline="none" color="inherit">
+              Projects
+            </Link>
+          </ScrollLink>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link
@@ -102,9 +115,16 @@ function HamburgerIcon() {
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link variant="button" className={classes.menuLink} href="#about">
-            About Me
-          </Link>
+          <ScrollLink
+            className={classes.menuLink}
+            to="about"
+            smooth={true}
+            duration={500}
+          >
+            <Link variant="button" underline="none" color="inherit">
+              About Me
+            </Link>
+          </ScrollLink>
         </MenuItem>
       </Menu>
     </>

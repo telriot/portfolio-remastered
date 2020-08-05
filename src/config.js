@@ -36,7 +36,7 @@ export const projects = [
   {
     name: "Kogetaro",
     description:
-      "A nostalgic, random generated, dungeon-crawler game rendered via React and managed through the Context API.",
+      "A nostalgic, random generated, dungeon-crawler game rendered via React and managed through the Context API",
     tools: "React, JavaScript, Sass, HTML",
     web: "https://obscure-falls-32133.herokuapp.com/",
     git: "https://github.com/telriot/dungeon-crawler",
@@ -54,8 +54,8 @@ export const projects = [
     jpg: d3chartsSmjpg,
   },
 ];
-export const about = `Hi! I am Ben, a former teacher converted to web development and located in sunny Miyazaki, Japan.
-
+export const about = `Hi! I am Ben, a former teacher transitioned to web development.
 I usually work on the MERN stack as a whole, mainly focusing on Hooks-based React development. When it comes to the front-end, I can comfortably switch between styling solutions and I love delving into all kinds of new technologies and ideas. 
 I like simple code and ideas that make sense, and strive to hold true to these two basic concepts.
+Feel free to contact me about work offers, projects and requests at the links down below!
 `;
