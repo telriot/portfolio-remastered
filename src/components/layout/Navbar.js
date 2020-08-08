@@ -18,14 +18,14 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     padding: "0 3vw",
     transition: "transform",
-    transitionDuration: theme.transitions.duration.short,
+    transitionDuration: theme.transitions.duration.standard,
     cursor: "pointer",
 
     "&:hover, &:focus": {
       textDecoration: "none",
-      transform: "translateY(-3px) rotate(5deg)",
+      transform: "translateY(-3px)",
       transition: "transform",
-      transitionDuration: theme.transitions.duration.short,
+      transitionDuration: theme.transitions.duration.standard,
       outline: "none",
     },
   },
@@ -33,7 +33,9 @@ const useStyles = makeStyles((theme) => ({
 function Navbar() {
   const classes = useStyles();
   const handleClick = (e) => {
-    e.target.blur();
+    e.persist();
+    console.log(e);
+    window.blur();
   };
   return (
     <div className={classes.navbar}>
@@ -57,7 +59,7 @@ function Navbar() {
         target="_blank"
         rel="noreferrer noopener"
         color="inherit"
-        onClick={handleClick}
+        onMouseUp={handleClick}
       >
         Resume
       </Link>
@@ -66,7 +68,7 @@ function Navbar() {
         to="about"
         smooth={true}
         duration={500}
-        onClick={handleClick}
+        onMouseUp={handleClick}
       >
         <Link variant="button" underline="none" color="inherit">
           About Me
