@@ -6,6 +6,9 @@ import mongoSm from "./mongoSm.png";
 import nodeSm from "./nodeSm.png";
 import reactSm from "./reactSm.png";
 import jsSm from "./jsSm.png";
+import typescript from "./Typescript.svg";
+import gatsby from "./Gatsby-Logo.svg";
+import next from "./nextjs.svg";
 import expressSm from "./expressSm.png";
 import bootstrapSm from "./bootstrapSm.png";
 import reduxSm from "./reduxSm.png";
@@ -30,19 +33,22 @@ import muiSmWp from "./muiSm.webp";
 import rtlSmWp from "./rtlSm.webp";
 
 export const fullStack = [
-  { name: "React", png: reactSm, webp: reactSmWp },
-  { name: "Redux", png: reduxSm, webp: reduxSmWp },
-  { name: "RTL", png: rtlSm, webp: rtlSmWp },
-  { name: "JavaScript", png: jsSm, webp: jsSmWp },
-  { name: "HTML", png: htmlSm, webp: htmlSmWp },
-  { name: "CSS", png: cssSm, webp: cssSmWp },
-  { name: "Sass", png: sassSm, webp: sassSmWp },
-  { name: "Bootstrap", png: bootstrapSm, webp: bootstrapSmWp },
-  { name: "Material UI", png: muiSm, webp: muiSmWp },
-  { name: "D3.js", png: d3Sm, webp: d3SmWp },
-  { name: "Jest", png: jestSm, webp: jestSmWp },
-  { name: "Git", png: gitSm, webp: gitSmWp },
-  { name: "Node.js", png: nodeSm, webp: nodeSmWp },
-  { name: "Mongo DB", png: mongoSm, webp: mongoSmWp },
-  { name: "Express.js", png: expressSm, webp: expressSmWp },
+	{ name: "TypeScript", png: typescript, webp: typescript },
+	{ name: "JavaScript", png: jsSm, webp: jsSmWp },
+	{ name: "React", png: reactSm, webp: reactSmWp },
+	{ name: "NextJS", png: next, webp: next },
+	{ name: "Gatsby", png: gatsby, webp: gatsby },
+	{ name: "Redux", png: reduxSm, webp: reduxSmWp },
+	{ name: "RTL", png: rtlSm, webp: rtlSmWp },
+	{ name: "HTML", png: htmlSm, webp: htmlSmWp },
+	{ name: "CSS", png: cssSm, webp: cssSmWp },
+	{ name: "Sass", png: sassSm, webp: sassSmWp },
+	{ name: "Bootstrap", png: bootstrapSm, webp: bootstrapSmWp },
+	{ name: "Material UI", png: muiSm, webp: muiSmWp },
+	{ name: "D3.js", png: d3Sm, webp: d3SmWp },
+	{ name: "Jest", png: jestSm, webp: jestSmWp },
+	{ name: "Git", png: gitSm, webp: gitSmWp },
+	{ name: "Node.js", png: nodeSm, webp: nodeSmWp },
+	{ name: "Mongo DB", png: mongoSm, webp: mongoSmWp },
+	{ name: "Express.js", png: expressSm, webp: expressSmWp },
 ];
